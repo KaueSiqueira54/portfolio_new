@@ -1,0 +1,108 @@
+@import url(../style.css);
+
+.sec_um {
+  width: 100%;
+  height: 600px;
+  background-color: var(--azul);
+  display: flex;
+}
+
+/* Div 1 */
+
+.div_um {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Text-1, 2 */
+
+.text_um,
+.text_dois {
+  width: 60%;
+  height: auto;
+  color: var(--gelo);
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.text_dois {
+  font-size: 22px;
+}
+
+.text_um span,
+.text_dois span {
+  color: var(--amarelo);
+}
+
+/* Paragrafo */
+
+.text_p {
+  width: 60%;
+  align-items: center;
+  height: auto;
+}
+
+.text_p p {
+  color: var(--gelo);
+  font-size: 22px;
+}
+
+/* Div redes */
+
+.redes {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+/* Botões */
+
+.botoes {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 2rem;
+}
+
+.botoes button {
+  width: 30%;
+  height: 38px;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.btn_1 {
+  background-color: var(--amarelo);
+}
+
+.btn_2 {
+  background-color: var(--azul);
+  border: 2px solid var(--amarelo);
+  color: var(--gelo);
+}
+
+/* Div 2 */
+
+.div_dois {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.div_dois img {
+  width: 70%;
+  height: auto;
+}
