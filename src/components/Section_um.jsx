@@ -1,7 +1,7 @@
 import styles from "../styles/Section_um/Section_um.module.css";
 import Github from "../images/Section_um/GitHub.svg";
 import Instagram from "../images/Section_um/Instagram.svg";
-import Linkedln from "../images/Section_um/Linkedin.svg";
+import LinkedIn from "../images/Section_um/LinkedIn.svg";
 import Kaue from "../images/Section_um/Kaue.png";
 
 export default function Section_um() {
@@ -37,7 +37,7 @@ export default function Section_um() {
             <img src={Instagram} alt="Logo do Instagram" />
           </a>
           <a href="#">
-            <img src={Linkedln} alt="Logo do Linkedln" />
+            <img src={LinkedIn} alt="Logo do Linkedln" />
           </a>
         </div>
 
