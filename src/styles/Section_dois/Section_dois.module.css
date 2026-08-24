@@ -1,0 +1,74 @@
+@import url(../style.css);
+
+.sec_one {
+  width: 100%;
+  height: auto;
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagem banner */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.image img {
+  width: 100%;
+}
+
+/* Title */
+
+.title {
+  width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
+}
+
+.title h1 {
+  text-align: center;
+  color: var(--gelo);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Tecnologias */
+
+.tecnologias {
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tec {
+  width: 15%;
+  height: 150px;
+  border: 4px solid var(--amarelo);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tec:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tec img {
+  width: 50%;
+}

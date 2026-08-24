@@ -30,9 +30,15 @@ export default function Section_um() {
         </div>
 
         <div className={styles.redes}>
-          <img src={Github} alt="Logo do GitHub" />
-          <img src={Instagram} alt="Logo do Instagram" />
-          <img src={Linkedln} alt="Logo do Linkedln" />
+          <a href="#">
+            <img src={Github} alt="Logo do GitHub" />
+          </a>
+          <a href="#">
+            <img src={Instagram} alt="Logo do Instagram" />
+          </a>
+          <a href="#">
+            <img src={Linkedln} alt="Logo do Linkedln" />
+          </a>
         </div>
 
         <div className={styles.botoes}>
