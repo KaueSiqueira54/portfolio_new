@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import Section_dois from "./components/Section_dois";
+import Section_tres from "./components/Section_tres";
 import Section_um from "./components/Section_um";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Section_um />
       <Section_dois />
+      <Section_tres />
     </main>
   );
 }
