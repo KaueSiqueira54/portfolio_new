@@ -1,0 +1,158 @@
+@import url(../style.css);
+
+.certificados {
+  background: var(--azul);
+  color: #fff;
+  padding: 48px 16px 40px;
+}
+
+.certificados__titulo {
+  margin-bottom: 56px;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: 0.01em;
+  color: var(--gelo);
+}
+
+/* ---------- Carrossel: seta | janela | seta ---------- */
+.certificados__carrossel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.certificados__seta {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 64px;
+  padding: 8px;
+  background: none;
+  cursor: pointer;
+}
+
+.certificados__seta svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--amarelo);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.2s ease;
+}
+
+.certificados__seta:hover svg {
+  transform: scale(1.12);
+}
+
+.certificados__seta:focus-visible,
+.certificados__ponto:focus-visible {
+  outline: 3px solid var(--gelo);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* ---------- Janela + pista que desliza ---------- */
+.certificados__janela {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  border: 4px solid var(--gelo);
+}
+
+.certificados__pista {
+  display: flex;
+  transition: transform 0.45s ease;
+}
+
+.certificados__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* ---------- Card ---------- */
+.cert-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+  padding: 12px 24px 12px 12px;
+}
+
+.cert-card__imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+
+.cert-card__instituicao {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.cert-card__titulo {
+  font-size: clamp(2rem, 2.6vw, 1.9rem);
+  font-weight: 700;
+  color: var(--amarelo);
+}
+
+.cert-card__tipo {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.cert-card__conteudo {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/* ---------- Pontos de navegação ---------- */
+.certificados__pontos {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.certificados__ponto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--amarelo);
+  cursor: pointer;
+}
+
+.is-ativo {
+  background: var(--gelo);
+}
+
+/* ---------- Mobile: imagem em cima, texto embaixo ---------- */
+@media (max-width: 800px) {
+  .cert-card {
+    grid-template-columns: 1fr;
+    padding: 12px;
+  }
+
+  .certificados__carrossel {
+    gap: 8px;
+  }
+
+  .certificados__seta {
+    width: 32px;
+    height: 48px;
+    padding: 4px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .certificados__pista,
+  .certificados__seta svg {
+    transition: none;
+  }
+}
