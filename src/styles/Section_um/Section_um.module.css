@@ -2,7 +2,7 @@
 
 .sec_um {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: var(--azul);
   display: flex;
 }
@@ -11,7 +11,7 @@
 
 .div_um {
   width: 50%;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,13 +26,13 @@
   width: 60%;
   height: auto;
   color: var(--gelo);
-  font-size: 25px;
+  font-size: 28px;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
 .text_dois {
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .text_um span,
@@ -50,7 +50,8 @@
 
 .text_p p {
   color: var(--gelo);
-  font-size: 22px;
+  font-size: 24px;
+  letter-spacing: 1px;
 }
 
 /* Div redes */
@@ -79,7 +80,7 @@
   width: 30%;
   height: 38px;
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .btn_1 {
@@ -113,10 +114,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 600px;
 }
 
 .div_dois img {
-  width: 70%;
+  width: 550px;
   height: auto;
 }
