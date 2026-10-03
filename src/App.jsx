@@ -8,6 +8,12 @@ import certJava from "./images/Section_quatro/Desenvolvedor_Java.png";
 import certProa from "./images/Section_quatro/Proprofissao.png";
 import certJogos from "./images/Section_quatro/JogosDigitais.jpg";
 import certCorol from "./images/Section_quatro/Corol.jpg";
+import certOneAlura from "./images/Section_quatro/OneAlura.png";
+import certToeic from "./images/Section_quatro/toeic.png";
+import certSantander25 from "./images/Section_quatro/Santander25.png";
+import certSantander24 from "./images/Section_quatro/Santander24.png";
+import certRihappy from "./images/Section_quatro/Rihappy.jpg";
+import certPython from "./images/Section_quatro/Python.png";
 
 const certificados = [
   {
@@ -79,6 +85,74 @@ const certificados = [
       "Secretariado",
       "Empreendedorismo",
       "Marketing Pessoal",
+    ],
+  },
+  {
+    id: "one-alura",
+    imagem: certOneAlura,
+    instituicao: "Alura",
+    titulo: "ONE Tech Foundation G9 - Back End",
+    tipo: "Ensino Técnico",
+    cargaHoraria: "348h",
+    conteudo: [
+      "Java",
+      "Back-End",
+      "Spring Boot",
+      "POO",
+      "APIs REST",
+      "Spring Framework",
+      "Empreendedorismo",
+      "Lógica de Programação",
+    ],
+  },
+  {
+    id: "toeic",
+    imagem: certToeic,
+    instituicao: "TOEIC Brasil",
+    titulo: "TOEIC Listening & Reading Test",
+    tipo: "Nível de Inglês",
+    cargaHoraria: "Score 460",
+    conteudo: ["Inglês", "TOEIC", "Nível de Inglês"],
+  },
+  {
+    id: "santander-2025",
+    imagem: certSantander25,
+    instituicao: "Digital Innovation One",
+    titulo: "Santander 2025 - Front-End",
+    tipo: "Bootcamp",
+    cargaHoraria: "102h",
+    conteudo: ["HTML", "CSS", "JavaScript", "Front-End", "Layout", "UI/UX"],
+  },
+  {
+    id: "rihappy",
+    imagem: certRihappy,
+    instituicao: "Digital Innovation One",
+    titulo: "Ri Happy - Front-end do Zero",
+    tipo: "Bootcamp",
+    cargaHoraria: "75h",
+    conteudo: ["HTML", "CSS", "JavaScript", "Front-End", "Layout", "UI/UX"],
+  },
+  {
+    id: "santander-2024",
+    imagem: certPython,
+    instituicao: "Digital Innovation One",
+    titulo: "Python AI Backend Developer",
+    tipo: "Bootcamp",
+    cargaHoraria: "67h",
+    conteudo: ["Python", "POO", "Lógica de Programação"],
+  },
+  {
+    id: "santander-2024",
+    imagem: certSantander24,
+    instituicao: "Digital Innovation One",
+    titulo: "Santander 2024 - Backend com Java",
+    tipo: "Bootcamp",
+    cargaHoraria: "87h",
+    conteudo: [
+      "Java",
+      "Spring Boot",
+      "Spring Framework",
+      "Lógica de Programação",
     ],
   },
   // { id: "...", imagem: ..., instituicao: "...", ... }
