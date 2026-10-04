@@ -14,6 +14,22 @@ import certSantander25 from "./images/Section_quatro/Santander25.png";
 import certSantander24 from "./images/Section_quatro/Santander24.png";
 import certRihappy from "./images/Section_quatro/Rihappy.jpg";
 import certPython from "./images/Section_quatro/Python.png";
+import Projetos from "./components/Projetos";
+//
+import imgSinalizaAI from "./images/Section_cinco/SinalizaAI.png";
+import imgParoquia from "./images/Section_cinco/Paroquia.png";
+import imgAncora from "./images/Section_cinco/Ancora.png";
+import imgConversae from "./images/Section_cinco/Conversae.png";
+import imgNexos from "./images/Section_cinco/Nexos.png";
+import imgPortfolio from "./images/Section_cinco/Portfolio1.png";
+
+//
+import iconReact from "./images/Section_cinco/React.svg";
+import iconJs from "./images/Section_cinco/javascript.svg";
+import iconJava from "./images/Section_cinco/java.svg";
+import iconSql from "./images/Section_cinco/SQL.svg";
+import iconHTML from "./images/Section_cinco/Html.svg";
+import iconCSS from "./images/Section_cinco/CSS.svg";
 
 const certificados = [
   {
@@ -158,6 +174,94 @@ const certificados = [
   // { id: "...", imagem: ..., instituicao: "...", ... }
 ];
 
+// Projetos
+
+const projetos = [
+  {
+    id: "sinalizaai",
+    imagem: imgSinalizaAI,
+    titulo: "SinalizaAI",
+    descricao: "Plataforma digital completa para o projeto SinalizaAI",
+    tecnologias: [
+      { nome: "React", icone: iconReact },
+      { nome: "JavaScript", icone: iconJs },
+      { nome: "Java", icone: iconJava },
+      { nome: "SQL", icone: iconSql },
+    ],
+    linkPrevia: "https://www.sinalizaai.com/",
+    linkRepositorio: "https://github.com/SinalizaAI",
+  },
+  {
+    id: "paroquia",
+    imagem: imgParoquia,
+    titulo: "Paroquia",
+    descricao: "Site institucional para uma Paróquia Católica",
+    tecnologias: [
+      { nome: "Html", icone: iconHTML },
+      { nome: "CSS", icone: iconCSS },
+      { nome: "JavaScript", icone: iconJs },
+      { nome: "React", icone: iconReact },
+    ],
+    linkPrevia: "https://paroquia-homepage.vercel.app/",
+    linkRepositorio: "https://github.com/KaueSiqueira54/Paroquia_homepage",
+  },
+  {
+    id: "ancora",
+    imagem: imgAncora,
+    titulo: "Âncora",
+    descricao: "Plataforma acadêmica para conectar alunos e monitores.",
+    tecnologias: [
+      { nome: "Html", icone: iconHTML },
+      { nome: "CSS", icone: iconCSS },
+      { nome: "JavaScript", icone: iconJs },
+    ],
+    linkPrevia: "https://ancora-black.vercel.app/",
+    linkRepositorio: "https://github.com/Joao2007Pedro/Ancora",
+  },
+  {
+    id: "conversae",
+    imagem: imgConversae,
+    titulo: "Conversaê",
+    descricao:
+      "Plataforma web voltada para tornar o cuidado com a saúde mental mais acessível, simples e humano.",
+    tecnologias: [
+      { nome: "Html", icone: iconHTML },
+      { nome: "CSS", icone: iconCSS },
+      { nome: "JavaScript", icone: iconJs },
+    ],
+    linkPrevia: "https://conversae.vercel.app/",
+    linkRepositorio: "https://github.com/KaueSiqueira54/Conversae",
+  },
+  {
+    id: "nexos",
+    imagem: imgNexos,
+    titulo: "Nexos da Mente",
+    descricao:
+      "Portfólio construido para a apresentação do Projeto Nexos da Mente.",
+    tecnologias: [
+      { nome: "Html", icone: iconHTML },
+      { nome: "CSS", icone: iconCSS },
+      { nome: "JavaScript", icone: iconJs },
+    ],
+    linkPrevia: "https://kauesiqueira54.github.io/Nexos-da-Mente/",
+    linkRepositorio: "https://github.com/KaueSiqueira54/Nexos-Da-Mente",
+  },
+  {
+    id: "portfolio",
+    imagem: imgPortfolio,
+    titulo: "Portfolio 1.0",
+    descricao:
+      "Meu primeiro portfólio pessoal construido utilizando html, css e js.",
+    tecnologias: [
+      { nome: "Html", icone: iconHTML },
+      { nome: "CSS", icone: iconCSS },
+      { nome: "JavaScript", icone: iconJs },
+    ],
+    linkPrevia: "https://kauesiqueira54.github.io/Portfolio1.0/",
+    linkRepositorio: "https://github.com/KaueSiqueira54/Portfolio1.0",
+  },
+];
+
 function App() {
   return (
     <main>
@@ -166,6 +270,7 @@ function App() {
       <Section_dois />
       <Section_tres />
       <Certificados certificados={certificados} />
+      <Projetos projetos={projetos} />
     </main>
   );
 }
