@@ -1,0 +1,42 @@
+@import url(/src/styles/style.css);
+
+.sec1 {
+  width: 100%;
+  height: auto;
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title_p {
+  width: 100%;
+  height: auto;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.icons {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img {
+  width: 120px;
+}

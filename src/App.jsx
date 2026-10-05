@@ -30,6 +30,7 @@ import iconJava from "./images/Section_cinco/java.svg";
 import iconSql from "./images/Section_cinco/SQL.svg";
 import iconHTML from "./images/Section_cinco/Html.svg";
 import iconCSS from "./images/Section_cinco/CSS.svg";
+import Contatos from "./components/Contatos";
 
 const certificados = [
   {
@@ -271,6 +272,7 @@ function App() {
       <Section_tres />
       <Certificados certificados={certificados} />
       <Projetos projetos={projetos} />
+      <Contatos />
     </main>
   );
 }
