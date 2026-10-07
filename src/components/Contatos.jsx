@@ -1,7 +1,7 @@
 import styles from "../styles/Section_seis/Contatos.module.css";
 import Github from "../images/Section_seis/GitHub.svg";
 import Instagram from "../images/Section_seis/Instagram.svg";
-import Linkedin from "../images/Section_seis/Linkedin.svg";
+import Linkedin from "../images/Section_seis/Linkedln.svg";
 
 export default function Contatos() {
   return (
