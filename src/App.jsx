@@ -26,7 +26,7 @@ import imgPortfolio from "./images/Section_cinco/Portfolio1.png";
 //
 import iconReact from "./images/Section_cinco/React.svg";
 import iconJs from "./images/Section_cinco/JavaScript.svg";
-import iconJava from "./images/Section_cinco/java.svg";
+import iconJava from "./images/Section_cinco/Java.svg";
 import iconSql from "./images/Section_cinco/SQL.svg";
 import iconHTML from "./images/Section_cinco/Html.svg";
 import iconCSS from "./images/Section_cinco/CSS.svg";
