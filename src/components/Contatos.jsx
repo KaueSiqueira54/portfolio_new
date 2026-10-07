@@ -1,7 +1,7 @@
 import styles from "../styles/Section_seis/Contatos.module.css";
 import Github from "../images/Section_seis/GitHub.svg";
 import Instagram from "../images/Section_seis/Instagram.svg";
-import Linkedin from "../images/Section_seis/Linkedln.svg";
+import Linkedln from "../images/Section_seis/Linkedln.svg";
 
 export default function Contatos() {
   return (
@@ -19,7 +19,7 @@ export default function Contatos() {
           <img src={Instagram} alt="Logo do Instagram" />
         </a>
         <a href="">
-          <img src={Linkedin} alt="Logo do Linkedin" />
+          <img src={Linkedln} alt="Logo do Linkedin" />
         </a>
       </div>
     </section>
