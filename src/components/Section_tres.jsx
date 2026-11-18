@@ -6,7 +6,7 @@ import Education_4 from "../images/Section_tres/Education_4.svg";
 
 export default function Section_tres() {
   return (
-    <section className={styles.sec}>
+    <section id="educacao" className={styles.sec}>
       <div className={styles.title}>Educação</div>
       <div className={styles.edu_1}>
         <div className={styles.image}>

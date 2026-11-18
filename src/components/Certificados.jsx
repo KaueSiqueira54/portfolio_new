@@ -10,7 +10,7 @@ function CertificadoCard({
   conteudo = [],
 }) {
   return (
-    <article className={styles["cert-card"]}>
+    <article id="certificados" className={styles["cert-card"]}>
       <div className={styles["cert-card__imagem"]}>
         <img src={imagem} alt={`Certificado de ${titulo} - ${instituicao}`} />
       </div>

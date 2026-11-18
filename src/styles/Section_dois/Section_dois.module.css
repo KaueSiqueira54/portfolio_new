@@ -35,14 +35,14 @@
 }
 
 /* Tecnologias */
-
+/* 
 .tecnologias {
   width: 80%;
   height: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
 .container {
   width: 100%;
@@ -53,8 +53,38 @@
   gap: 20px;
 }
 
-.tec {
+/* .tec {
   width: 15%;
+  height: 150px;
+  border: 4px solid var(--amarelo);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* .tec:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+} */
+
+/* .tec img {
+  width: 50%;
+} */
+
+/*  */
+
+.tecnologias {
+  width: 50%;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tec {
   height: 150px;
   border: 4px solid var(--amarelo);
   border-radius: 10px;
@@ -65,10 +95,23 @@
 
 .tec:hover {
   transform: scale(1.05);
-  transition: 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.tec img {
+.tec svg {
   width: 50%;
+  height: 50%;
+}
+
+@media (max-width: 768px) {
+  .tecnologias {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .tecnologias {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

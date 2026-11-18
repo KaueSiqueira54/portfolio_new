@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 /* Text-1, 2 */
@@ -64,6 +64,11 @@
   justify-content: left;
 }
 
+.redes a:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
 /* Botões */
 
 .botoes {
@@ -78,7 +83,7 @@
 
 .botoes button {
   width: 30%;
-  height: 38px;
+  height: 42px;
   border-radius: 20px;
   font-size: 22px;
 }
@@ -97,6 +102,11 @@
   border: 2px solid var(--amarelo);
   color: var(--gelo);
   transition: 0.2s ease-in-out;
+}
+
+.btn_2 a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .btn_2:hover {

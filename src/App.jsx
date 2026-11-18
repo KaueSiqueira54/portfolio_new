@@ -14,10 +14,10 @@ import certSantander25 from "./images/Section_quatro/Santander25.png";
 import certSantander24 from "./images/Section_quatro/Santander24.png";
 import certRihappy from "./images/Section_quatro/Rihappy.jpg";
 import certPython from "./images/Section_quatro/Python.png";
+import certJavaScript from "./images/Section_quatro/Fundamentos JS - IFRS.png";
 import Projetos from "./components/Projetos";
 //
 import imgSinalizaAI from "./images/Section_cinco/SinalizaAI.png";
-import imgParoquia from "./images/Section_cinco/Paroquia.png";
 import imgAncora from "./images/Section_cinco/Ancora.png";
 import imgConversae from "./images/Section_cinco/Conversae.png";
 import imgNexos from "./images/Section_cinco/Nexos.png";
@@ -69,6 +69,20 @@ const certificados = [
       "Demoday",
       "Atividades de integração de equipe",
       "Planejamento de projetos",
+    ],
+  },
+  {
+    id: "javascript",
+    imagem: certJavaScript,
+    instituicao: "Instituto Federal - IFRS",
+    titulo: "JavaScript: Fundamentos para Desenvolvimento Web Interativo",
+    tipo: "Curso Livre",
+    cargaHoraria: "40h",
+    conteudo: [
+      "Introdução ao JavaScript e Sintaxe Básica",
+      "Funções: Declaração, Chamada e Escopo",
+      "Manipulação do DOM e Eventos",
+      "Trabalhando com Formulários e Validação de Dados.",
     ],
   },
   {
@@ -159,7 +173,7 @@ const certificados = [
     conteudo: ["Python", "POO", "Lógica de Programação"],
   },
   {
-    id: "santander-2024",
+    id: "santander-2024-2",
     imagem: certSantander24,
     instituicao: "Digital Innovation One",
     titulo: "Santander 2024 - Backend com Java",
@@ -192,20 +206,7 @@ const projetos = [
     linkPrevia: "https://www.sinalizaai.com/",
     linkRepositorio: "https://github.com/SinalizaAI",
   },
-  {
-    id: "paroquia",
-    imagem: imgParoquia,
-    titulo: "Paroquia",
-    descricao: "Site institucional para uma Paróquia Católica",
-    tecnologias: [
-      { nome: "Html", icone: iconHTML },
-      { nome: "CSS", icone: iconCSS },
-      { nome: "JavaScript", icone: iconJs },
-      { nome: "React", icone: iconReact },
-    ],
-    linkPrevia: "https://paroquia-homepage.vercel.app/",
-    linkRepositorio: "https://github.com/KaueSiqueira54/Paroquia_homepage",
-  },
+
   {
     id: "ancora",
     imagem: imgAncora,

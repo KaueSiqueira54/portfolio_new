@@ -5,20 +5,20 @@ import Linkedln from "../images/Section_seis/Linkedln.svg";
 
 export default function Contatos() {
   return (
-    <section className={styles.sec1}>
+    <section id="contatos" className={styles.sec1}>
       <h2 className={styles.title}>Contate-me</h2>
       <p className={styles.title_p}>
         Estou disponível para serviços e novas conexões. Conecte-se comigo
         através das minhas redes sociais.
       </p>
       <div className={styles.icons}>
-        <a href="">
+        <a href="https://github.com/KaueSiqueira54" target="_blank">
           <img src={Github} alt="Logo do GitHub" />
         </a>
-        <a href="">
+        <a href="https://www.instagram.com/siqueira_dev54/#" target="_blank">
           <img src={Instagram} alt="Logo do Instagram" />
         </a>
-        <a href="">
+        <a href="https://www.linkedin.com/in/kauesiqueiradev/" target="_blank">
           <img src={Linkedln} alt="Logo do Linkedin" />
         </a>
       </div>

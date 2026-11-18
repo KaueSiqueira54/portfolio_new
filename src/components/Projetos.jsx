@@ -11,7 +11,7 @@ function ProjetoCard({
   linkRepositorio,
 }) {
   return (
-    <article className={styles["projeto-card"]}>
+    <article id="projetos" className={styles["projeto-card"]}>
       <div className={styles["projeto-card__imagem"]}>
         <img src={imagem} alt={`Captura de tela do projeto ${titulo}`} />
       </div>

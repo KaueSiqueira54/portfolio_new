@@ -1,7 +1,7 @@
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
   box-sizing: border-box;
   font-family: "Lato";
   font-weight: 400;
@@ -12,4 +12,9 @@
   --amarelo: #fecd00;
   --gelo: #d8eff7;
   --preto: #000;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px; /* altura do header */
 }
