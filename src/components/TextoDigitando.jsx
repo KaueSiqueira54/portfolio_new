@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "../styles/TextoDigitando/TextoDigitando.module.css";
 
 const PALAVRAS = [
-  "Docente",
+  "Docente de Tecnologia",
   "Desenvolvedor",
   "Dev Front-End",
   "Futuro Full-Stack",

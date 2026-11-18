@@ -22,6 +22,9 @@ export default function Contatos() {
           <img src={Linkedln} alt="Logo do Linkedin" />
         </a>
       </div>
+      <p className={styles.copy}>
+        Kauê Siqueira. &copy; Copyright 2026. Todos os Direitos Reservados.
+      </p>
     </section>
   );
 }
