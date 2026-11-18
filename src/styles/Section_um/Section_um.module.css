@@ -131,3 +131,51 @@
   width: 550px;
   height: auto;
 }
+
+/* Responsividade */
+
+@media (max-width: 600px) {
+  .sec_um {
+    flex-direction: column-reverse;
+  }
+  .div_um,
+  .div_dois {
+    width: 100%;
+    height: auto;
+  }
+
+  .text_um,
+  .text_p,
+  .redes,
+  .botoes {
+    width: 90%;
+  }
+
+  .text_um {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .text_p p {
+    font-size: 22px;
+    text-align: justify;
+  }
+
+  .redes {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .botoes {
+    justify-content: center;
+  }
+
+  .botoes button {
+    width: 40%;
+  }
+
+  .div_dois img {
+    width: 80%;
+    margin: 1rem;
+  }
+}
