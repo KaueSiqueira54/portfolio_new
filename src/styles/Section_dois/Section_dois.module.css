@@ -11,12 +11,16 @@
 
 /* Imagem banner */
 .image {
+  margin: 1rem;
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image img {
-  width: 100%;
+  width: 50%;
 }
 
 /* Title */
@@ -35,14 +39,6 @@
 }
 
 /* Tecnologias */
-/* 
-.tecnologias {
-  width: 80%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-} */
 
 .container {
   width: 100%;
@@ -52,26 +48,6 @@
   justify-content: center;
   gap: 20px;
 }
-
-/* .tec {
-  width: 15%;
-  height: 150px;
-  border: 4px solid var(--amarelo);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .tec:hover {
-  transform: scale(1.05);
-  transition: 0.2s ease-in-out;
-  cursor: pointer;
-} */
-
-/* .tec img {
-  width: 50%;
-} */
 
 /*  */
 
@@ -104,9 +80,43 @@
   height: 50%;
 }
 
+/* Responsividade */
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .tecnologias {
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image img {
+    width: 70%;
+  }
+
+  .tec {
+    height: 150px;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .tecnologias {
+    width: 80%;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .image img {
+    width: 90%;
+  }
+
+  .tec {
+    height: 130px;
+  }
+
+  .title h1 {
+    font-size: 1.6rem;
   }
 }
 
