@@ -51,3 +51,23 @@
   font-size: 1.2rem;
   color: #fff;
 }
+
+/* Responsividade */
+
+@media (max-width: 1000px) {
+  .title_p {
+    font-size: 22px;
+  }
+
+  .icons {
+    width: 90%;
+  }
+
+  .icons img {
+    width: 80px;
+  }
+
+  .copy {
+    text-align: center;
+  }
+}
