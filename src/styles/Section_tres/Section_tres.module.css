@@ -2,12 +2,13 @@
 
 .sec {
   width: 100%;
-  height: 290vh;
+  height: auto;
   background-color: var(--azul);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  gap: 50px;
 }
 
 /* Title */
@@ -33,7 +34,7 @@
 .image,
 .texts_container {
   width: 50%;
-  height: 400px;
+  height: auto;
 }
 
 /* Image */
@@ -58,17 +59,18 @@
   align-self: flex-end;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: auto;
 }
 
 .texts {
   width: 90%;
-  height: 200px;
+  height: auto;
   color: var(--gelo);
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding: 1rem;
 }
 
 .texts h3 {
@@ -84,4 +86,97 @@
 
 .edu_2 {
   flex-direction: row-reverse;
+}
+
+/* Responsividade */
+
+@media (min-width: 1600px) {
+  .sec {
+    gap: 10rem;
+    padding-bottom: 12rem;
+  }
+
+  .texts_container {
+    height: 60%;
+  }
+
+  .title {
+    position: relative;
+    top: 4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+  .sec {
+    height: auto;
+    gap: 80px;
+  }
+
+  .edu_1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .image,
+  .texts_container {
+    width: 100%;
+  }
+
+  .image {
+    height: auto;
+  }
+
+  .texts_container {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .texts {
+    width: 100%;
+    height: auto;
+  }
+
+  .texts h3 {
+    font-size: 22px;
+  }
+
+  .texts p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sec {
+    height: auto;
+  }
+
+  .edu_1 {
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .image,
+  .texts_container {
+    width: 100%;
+  }
+
+  .texts_container {
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .texts {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+  .image img {
+    width: 60%;
+  }
 }
