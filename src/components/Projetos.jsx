@@ -1,5 +1,6 @@
 import styles from "../styles/Section_cinco/Projetos.module.css";
 import { useState } from "react";
+import { TECNOLOGIAS } from "../data/tecnologias";
 
 // ---------- Card individual: recebe os dados de UM projeto via props ----------
 function ProjetoCard({
@@ -11,7 +12,7 @@ function ProjetoCard({
   linkRepositorio,
 }) {
   return (
-    <article id="projetos" className={styles["projeto-card"]}>
+    <article className={styles["projeto-card"]} id="projetos">
       <div className={styles["projeto-card__imagem"]}>
         <img src={imagem} alt={`Captura de tela do projeto ${titulo}`} />
       </div>
@@ -21,11 +22,21 @@ function ProjetoCard({
         <p className={styles["projeto-card__descricao"]}>{descricao}</p>
 
         <ul className={styles["projeto-card__techs"]}>
-          {tecnologias.map((tech) => (
-            <li className={styles["projeto-card__tech"]} key={tech.nome}>
-              <img src={tech.icone} alt={tech.nome} title={tech.nome} />
-            </li>
-          ))}
+          {tecnologias.map((nome) => {
+            const tech = TECNOLOGIAS[nome];
+            if (!tech) return null; // nome não cadastrado: ignora
+            const Icone = tech.icone;
+
+            return (
+              <li
+                className={styles["projeto-card__tech"]}
+                key={nome}
+                title={nome}
+              >
+                <Icone color={tech.cor} role="img" aria-label={nome} />
+              </li>
+            );
+          })}
         </ul>
 
         <div className={styles["projeto-card__links"]}>

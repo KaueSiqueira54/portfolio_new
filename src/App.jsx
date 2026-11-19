@@ -24,12 +24,6 @@ import imgNexos from "./images/Section_cinco/Nexos.png";
 import imgPortfolio from "./images/Section_cinco/Portfolio1.png";
 
 //
-import iconReact from "./images/Section_cinco/React.svg";
-import iconJs from "./images/Section_cinco/JavaScript.svg";
-import iconJava from "./images/Section_cinco/Java.svg";
-import iconSql from "./images/Section_cinco/SQL.svg";
-import iconHTML from "./images/Section_cinco/Html.svg";
-import iconCSS from "./images/Section_cinco/CSS.svg";
 import Contatos from "./components/Contatos";
 
 const certificados = [
@@ -186,7 +180,6 @@ const certificados = [
       "Lógica de Programação",
     ],
   },
-  // { id: "...", imagem: ..., instituicao: "...", ... }
 ];
 
 // Projetos
@@ -197,12 +190,7 @@ const projetos = [
     imagem: imgSinalizaAI,
     titulo: "SinalizaAI",
     descricao: "Plataforma digital completa para o projeto SinalizaAI",
-    tecnologias: [
-      { nome: "React", icone: iconReact },
-      { nome: "JavaScript", icone: iconJs },
-      { nome: "Java", icone: iconJava },
-      { nome: "SQL", icone: iconSql },
-    ],
+    tecnologias: ["React", "JavaScript", "Java", "SQL"],
     linkPrevia: "https://www.sinalizaai.com/",
     linkRepositorio: "https://github.com/SinalizaAI",
   },
@@ -212,11 +200,7 @@ const projetos = [
     imagem: imgAncora,
     titulo: "Âncora",
     descricao: "Plataforma acadêmica para conectar alunos e monitores.",
-    tecnologias: [
-      { nome: "Html", icone: iconHTML },
-      { nome: "CSS", icone: iconCSS },
-      { nome: "JavaScript", icone: iconJs },
-    ],
+    tecnologias: ["HTML", "CSS", "JavaScript"],
     linkPrevia: "https://ancora-black.vercel.app/",
     linkRepositorio: "https://github.com/Joao2007Pedro/Ancora",
   },
@@ -226,11 +210,7 @@ const projetos = [
     titulo: "Conversaê",
     descricao:
       "Plataforma web voltada para tornar o cuidado com a saúde mental mais acessível, simples e humano.",
-    tecnologias: [
-      { nome: "Html", icone: iconHTML },
-      { nome: "CSS", icone: iconCSS },
-      { nome: "JavaScript", icone: iconJs },
-    ],
+    tecnologias: ["HTML", "CSS", "JavaScript"],
     linkPrevia: "https://conversae.vercel.app/",
     linkRepositorio: "https://github.com/KaueSiqueira54/Conversae",
   },
@@ -240,11 +220,7 @@ const projetos = [
     titulo: "Nexos da Mente",
     descricao:
       "Portfólio construido para a apresentação do Projeto Nexos da Mente.",
-    tecnologias: [
-      { nome: "Html", icone: iconHTML },
-      { nome: "CSS", icone: iconCSS },
-      { nome: "JavaScript", icone: iconJs },
-    ],
+    tecnologias: ["HTML", "CSS", "JavaScript"],
     linkPrevia: "https://kauesiqueira54.github.io/Nexos-da-Mente/",
     linkRepositorio: "https://github.com/KaueSiqueira54/Nexos-Da-Mente",
   },
@@ -254,11 +230,7 @@ const projetos = [
     titulo: "Portfolio 1.0",
     descricao:
       "Meu primeiro portfólio pessoal construido utilizando html, css e js.",
-    tecnologias: [
-      { nome: "Html", icone: iconHTML },
-      { nome: "CSS", icone: iconCSS },
-      { nome: "JavaScript", icone: iconJs },
-    ],
+    tecnologias: ["HTML", "CSS", "JavaScript"],
     linkPrevia: "https://kauesiqueira54.github.io/Portfolio1.0/",
     linkRepositorio: "https://github.com/KaueSiqueira54/Portfolio1.0",
   },
