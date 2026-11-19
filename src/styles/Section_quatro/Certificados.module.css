@@ -133,7 +133,23 @@
 }
 
 /* ---------- Mobile: imagem em cima, texto embaixo ---------- */
-@media (max-width: 800px) {
+
+@media (min-width: 901px) and (max-width: 1130px) {
+  .cert-card__instituicao {
+    font-size: 1.4rem;
+  }
+
+  .cert-card__titulo {
+    font-size: 1.3rem;
+  }
+
+  .cert-card__tipo,
+  .cert-card__conteudo {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 900px) {
   .cert-card {
     grid-template-columns: 1fr;
     padding: 12px;
@@ -147,6 +163,34 @@
     width: 32px;
     height: 48px;
     padding: 4px;
+  }
+
+  .cert-card__instituicao {
+    font-size: 1.4rem;
+  }
+
+  .cert-card__titulo {
+    font-size: 1.3rem;
+  }
+
+  .cert-card__tipo,
+  .cert-card__conteudo {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .cert-card__instituicao {
+    font-size: 1.8rem;
+  }
+
+  .cert-card__titulo {
+    font-size: 1.5rem;
+  }
+
+  .cert-card__tipo,
+  .cert-card__conteudo {
+    font-size: 1.5rem;
   }
 }
 

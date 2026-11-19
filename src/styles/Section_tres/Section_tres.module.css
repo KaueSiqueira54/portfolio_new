@@ -173,6 +173,14 @@
     width: 100%;
     height: auto;
   }
+
+  .texts h3 {
+    font-size: 22px;
+  }
+
+  .texts p {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 560px) and (max-width: 768px) {
